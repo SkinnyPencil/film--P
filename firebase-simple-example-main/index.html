@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Min Filmdatabase</title>
+</head>
+<body>
+    <header>
+        <h1>Min Filmdatabase</h1>
+    </header>
+
+    <label for="fname">Title:</label>
+    <input type="text" id="title" name="fname">
+    <label for="lname">Year:</label>
+    <input type="text" id="lname" name="lname">
+    <label for="">Genre:</label>
+    <input type="text" id="genre">
+    <label for="">Image URL:</label>
+    <input type="text" id="image">
+    <button onclick="addMovie()">Legg til</button>
+
+    <main>
+        <div id="movies" class="movie-container"></div>
+    </main>
+
+    <footer>
+        <!-- Add your scripts here -->
+        <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore-compat.js"></script>
+        <script src="js/database.js"></script>
+    </footer>
+
+</body>
+</html>
+
